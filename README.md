@@ -46,9 +46,18 @@ and one servo.
 | 12 V bench supply | 1 | ~84 W peak with all motors running |
 
 ### Mechanical
-The arm is [FTobler's 3D Printed Belt Driven Robot Arm](https://github.com/ftobler/robotArm) —
-approx. 20 cm tall, PLA, no part larger than 150 mm, so it prints on compact printers.
-See `hardware/` for the printed enclosure (Fusion 360) designed for this build.
+The arm is the **RobotArm** originally designed by **Florin Tobler**
+([ftobler/robotArm](https://github.com/ftobler/robotArm) ·
+[Thingiverse](https://www.thingiverse.com/thing:1718984)), built here in the
+belt-driven community variant maintained by **20sffactory**
+([community_robot_arm](https://github.com/20sffactory/community_robot_arm) ·
+[20sffactory.com/robot](https://www.20sffactory.com/robot/about)).
+
+Approx. 20 cm tall, PLA, no part larger than 150 mm, so it prints on compact printers.
+
+> **Mechanical files are not redistributed in this repository.** Tobler's design is
+> licensed CC BY-NC — download the STLs from the sources above. Only the control-board
+> enclosure in `hardware/case/`, which is original to this project, is included here.
 
 ---
 
@@ -68,7 +77,8 @@ See `hardware/` for the printed enclosure (Fusion 360) designed for this build.
 ├── hardware/
 │   ├── schematics/          # Glove + arm circuit diagrams
 │   ├── pcb/                 # EasyEDA designs (future work)
-│   └── case/                # 3D-printed enclosure for the arm's control board
+│   └── case/                # 3D-printed enclosure for the control board (original)
+│                            # NOTE: arm STLs are NOT included — see Mechanical above
 ├── docs/
 │   ├── media/               # Photos, demo GIF
 │   └── thesis.pdf           # Full MSc thesis
@@ -135,10 +145,46 @@ These are the measured values from this build; yours may differ.
 
 ## Acknowledgements
 
-Arm mechanical design by [FTobler](https://github.com/ftobler/robotArm). Built as an
-MSc thesis project; the full write-up is in `docs/thesis.pdf`.
+The arm mechanics are the **RobotArm** by **Florin Tobler**
+(<https://github.com/ftobler/robotArm> · <https://www.thingiverse.com/thing:1718984>),
+licensed CC BY-NC. This build uses the belt-driven community variant maintained by
+**20sffactory** (<https://github.com/20sffactory/community_robot_arm>).
+Mechanical files are not redistributed here — please obtain them from the sources above.
+
+Inverse kinematics follow the approach described by A. Osman and A. Aldabbagh in
+*Enabling STEM Education Through a Remote, Gesture-Controlled Surgical Robot*, which
+uses the same arm platform.
+
+Built as an MSc thesis project; the full write-up is in `docs/thesis.pdf`.
+
+If you cite the arm design:
+
+```bibtex
+@misc{tobler_robotarm,
+  author       = {Tobler, Florin},
+  title        = {{RobotArm}: Software for a {3D} Printed Robot Arm},
+  year         = {2016},
+  howpublished = {\url{https://github.com/ftobler/robotArm}},
+  note         = {Licensed CC BY-NC}
+}
+```
+
+---
 
 ## License
 
-<!-- TODO: pick one. MIT is the usual default for firmware. Check FTobler's license
-     before redistributing any of the mechanical files. -->
+This repository contains work under two different licenses:
+
+| Path | License | Notes |
+|---|---|---|
+| `firmware/`, `tests/` | MIT | Original ESP32 firmware written for this project |
+| `hardware/case/`, `hardware/pcb/`, `hardware/schematics/` | CC BY-NC 4.0 | Original to this project; matches the upstream arm's terms |
+| `docs/thesis.pdf` | All rights reserved | © <your name>, <year> |
+| Arm STL / CAD files | **Not included** | CC BY-NC by Florin Tobler — download from upstream |
+
+The upstream arm design is CC BY-NC, which is not an OSI-approved open-source license.
+Nothing derived from it may be relicensed under MIT or used commercially without
+permission from the original author. The firmware in this repository is independent
+work and is unaffected by that restriction.
+
+<!-- TODO: add a LICENSE file (MIT) at the repo root and fill in your name/year above. -->
