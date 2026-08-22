@@ -4,7 +4,7 @@ A 3-DOF robotic arm controlled in real time by hand gestures, using two ESP32
 microcontrollers communicating over **ESP-NOW**. One ESP32 lives on a sensor-equipped
 glove; the other drives the arm. Total build cost: **~£152**.
 
-![Uploading Movieon16-01-2025at4.50PM-ezgif.com-video-to-gif-converter (1).gif…]()
+<img width="600" height="400" alt="Movieon16-01-2025at4 50PM-ezgif com-video-to-gif-converter (1)" src="https://github.com/user-attachments/assets/f53afcea-b1a7-4f0c-840f-20f0d88e2ccd" />
 
 ## What it does
 
