@@ -15,6 +15,13 @@ glove; the other drives the arm. Total build cost: **~£152**.
 | Bend middle finger | Gripper open / close |
 | Press thumb limit switch | Arm extension |
 
+<img width="1920" height="1080" alt="Untitled Project (4)" src="https://github.com/user-attachments/assets/0975df20-d94e-4f47-a21f-0c3df7944651" />
+<img width="1920" height="1080" alt="Untitled Project (3)" src="https://github.com/user-attachments/assets/aa6fd756-fc72-4bce-b925-f3bc3d84f328" />
+<img width="1080" height="1080" alt="Untitled Project (8)" src="https://github.com/user-attachments/assets/cb691bb6-a457-4203-9c79-f6447e448688" />
+<img width="1920" height="1080" alt="!extend" src="https://github.com/user-attachments/assets/c2db1893-0659-4b31-ab1a-acfdec760e80" />
+
+
+
 The glove reads hand orientation from an MPU6050 and finger bend from a flex sensor,
 packs the values into a struct, and sends it to the arm's MAC address over ESP-NOW.
 The arm's ESP32 unpacks the struct and drives three stepper motors (via L298N drivers)
