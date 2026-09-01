@@ -158,7 +158,7 @@ Inverse kinematics follow the approach described by A. Osman and A. Aldabbagh in
 *Enabling STEM Education Through a Remote, Gesture-Controlled Surgical Robot*, which
 uses the same arm platform.
 
-Built as an MSc thesis project; the full write-up is in `docs/thesis.pdf`.
+Built as a thesis project
 
 If you cite the arm design:
 
