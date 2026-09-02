@@ -6,6 +6,9 @@ glove; the other drives the arm. Total build cost: **~£152**.
 
 <img width="600" height="400" alt="Movieon16-01-2025at4 50PM-ezgif com-video-to-gif-converter (1)" src="https://github.com/user-attachments/assets/f53afcea-b1a7-4f0c-840f-20f0d88e2ccd" />
 
+[![DOI](https://zenodo.org/badge/1341082955.svg)](https://doi.org/10.5281/zenodo.22253077)
+
+
 ## What it does
 
 | Gesture | Arm motion |
